@@ -1,0 +1,28 @@
+#Producto punto
+
+a = [5,8,9]
+b = [4,5,2]
+c = [a[0]*b[0]+a[1]*b[1]+a[2]*b[2]]
+print c
+####################################
+#Producto cruz
+
+p = [-3,-2,5]
+q = [6,-10,-1]
+x = [a[1]*b[2]-a[2]*b[1],a[2]*b[0]-a[0]*b[2],a[0]*b[1]-a[1]*b[0]]]
+print x
+####################################
+# Multiplicación de matrices
+
+def matrixmult (A, B):
+  C = [[0 for row in range(len(A))] for col in range(len(B[0]))]
+  for i in range(len(A)):
+    for j in range(len(B[0])):
+      for k in range(len(B)):
+        C[i][j] += A[i][k]*B[k][j]
+        
+return C
+
+i = [1,4,3],[3,2,3],[4,2,5]
+j = [5,0,3],[3,9,3],[6,5,2]
+matrixmult(i,j)
